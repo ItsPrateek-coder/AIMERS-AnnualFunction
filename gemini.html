@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Day Celebration | @AiMERS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="aimers-removebg-preview.png">
+    <style>
+        :root {
+            --primary-blue: #1a237e;
+            --accent-gold: #ffd700;
+            --text-white: #ffffff;
+            --soft-glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at center, #283593 0%, #0a0e2e 100%);
+            color: var(--text-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Elements */
+        .decor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .shape {
+            position: absolute;
+            filter: blur(20px);
+            opacity: 0.3;
+            background: var(--accent-gold);
+            border-radius: 50%;
+            animation: float 10s infinite alternate;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0) scale(1); }
+            to { transform: translateY(-50px) scale(1.2); }
+        }
+
+        /* Main Card */
+        .invite-card {
+            position: relative;
+            z-index: 1;
+            width: 90%;
+            max-width: 500px;
+            background: var(--soft-glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            margin: 20px;
+        }
+
+        .logo-section {
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .sub-brand {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            color: #ff5252;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-gold);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .celebration-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .detail-item h3 {
+            color: var(--accent-gold);
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        .venue {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: var(--accent-gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="decor">
+        <div class="shape" style="top: 10%; left: 10%; width: 100px; height: 100px;"></div>
+        <div class="shape" style="bottom: 15%; right: 10%; width: 150px; height: 150px; background: #ff5252;"></div>
+    </div>
+
+    <div class="invite-card">
+        <div class="logo-section">
+            <p style="text-transform: uppercase; letter-spacing: 5px; font-size: 0.7rem; margin-bottom: 5px;">Invitation</p>
+            <h2 class="brand-name">@AiMERS</h2>
+            <div class="sub-brand">Foundation | JEE | NEET | Board</div>
+        </div>
+
+        <h1>ANNUAL DAY</h1>
+        <div class="celebration-text">Celebration</div>
+
+        <p>With immense joy, we invite you to grace the occasion and encourage Young Talents.</p>
+
+        <div class="details-grid">
+            <div class="detail-item">
+                <p>DATE</p>
+                <h3>29 March 2026</h3>
+            </div>
+            <div class="detail-item">
+                <p>TIME</p>
+                <h3>12 PM Onwards</h3>
+            </div>
+        </div>
+
+        <div class="venue">
+            <strong>VENUE:</strong><br>
+            A.S. Choudhary Complex K.E. Inter Road,<br>
+            Kashipur, Samastipur - 848101
+        </div>
+
+        <div class="footer">
+            <p><strong>Founder & M.D.</strong></p>
+            <h3 style="margin: 5px 0;">A.G. Sir</h3>
+            <p>(Chem. Faculty, JEE & NEET Mentor)</p>
+            <a href="tel:6206592375" class="btn">Contact Us</a>
+        </div>
+    </div>
+
+</body>
+</html>
